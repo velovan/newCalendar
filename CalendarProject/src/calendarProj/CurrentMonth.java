@@ -37,7 +37,7 @@ public class CurrentMonth {
 
 		for (int i = 1; i <= daysInMonth; i++) {
 			if (i == cldr.getDayOfMonth()) {
-//				System.out.print("[" + i + "] ");
+ //			System.out.print("[" + i + "] ");
 				 System.out.print(ANSI_RED + i + ANSI_RESET);
 				i++;
 			}
