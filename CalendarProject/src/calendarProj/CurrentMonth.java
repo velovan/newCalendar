@@ -10,7 +10,7 @@ public class CurrentMonth {
 	public final static int daysinmonths[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 	public static final String ANSI_RED = "\u001B[31m";
-	public static final String ANSI_RESET = "\u001B[0m";
+	public static final String ANSI_RESET = "\u001B[0m  ";
 
 	public static void displayMonth(int month, int year) {
 
@@ -36,19 +36,29 @@ public class CurrentMonth {
 		}
 
 		for (int i = 1; i <= daysInMonth; i++) {
+			
 			if (i == cldr.getDayOfMonth()) {
- //			System.out.print("[" + i + "] ");
+//				System.out.print("[" + i + "] ");
 				 System.out.print(ANSI_RED + i + ANSI_RESET);
 				i++;
 			}
 			if (i <= 9) {
 				System.out.print(" ");
 			}
-			System.out.print(i);
-
-			if ((blankdays + i) % 7 == 0) {
+			
+		 
+			if ((blankdays + i) % 7 == 6) {
+				System.out.print(ANSI_RED + i + ANSI_RESET);
+//				System.out.print("[" + i + "] "); 
+				i++; 
+			}
+			if ((blankdays + i) % 7 == 0 ) {
+				System.out.print(ANSI_RED + i + ANSI_RESET);
+//				System.out.print("[" + i + "] ");
 				System.out.println();
+//				i++; 
 			} else {
+				System.out.print(i);
 				System.out.print("  ");
 			}
 		}
