@@ -10,7 +10,6 @@ public class MainCalendar {
 
 		LocalDate todaycldr = LocalDate.now();
 		moncldr.displayMonth(todaycldr.getMonth().ordinal(), todaycldr.getYear());
-
 		SelectedMonth sel = new SelectedMonth();
 		sel.testDate();
 	}
