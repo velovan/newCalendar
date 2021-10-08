@@ -24,8 +24,7 @@ public class SelectedMonth{
 			month += 12;
 			year--;
 		} //
-		h = (1 + (int) (((month + 1) * 25) / 10.0) + year + (int) (year / 4.0) + 6 * (int) (year / 100.0)
-				+ (int) (year / 400.0)) % 7;
+		h = (1 + (int) (((month + 1) * 25) / 10.0) + year + (int) (year / 4.0) + 6 * (int) (year / 100.0) + (int) (year / 400.0)) % 7;
 		String dayName = "";
 		switch (h) {
 		case 0:
