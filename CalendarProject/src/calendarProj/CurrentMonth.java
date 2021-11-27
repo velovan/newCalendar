@@ -45,7 +45,6 @@ public class CurrentMonth {
 			if (i <= 9) {
 				System.out.print(" ");
 			}
-			
 		 
 			if ((blankdays + i) % 7 == 6) {
 				System.out.print(ANSI_RED + i + ANSI_RESET);
