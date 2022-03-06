@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class CurrentMonth {
 
-	public final static String[] monthcalender = { "January", "February", "March", "April", "May", "June", "July",
-			"August", "September", "October", "November", "December" };
+	public final static String[] monthcalender = { "January", "February", "March", "April",
+		"May", "June", "July", "August", "September", "October", "November", "December" };
 
 	public final static int daysinmonths[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
