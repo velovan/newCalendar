@@ -156,11 +156,11 @@ public class SelectedMonth{
 			System.out.println("Enter year: ");
 			year = scan2.next();
 			if (checkYear(year)) {
-				data2[count2] = Integer.parseInt(year);
-				count2++;
-			} else {
-				System.out.println("Wrong input ! ");
-				continue;
+			     data2[count2] = Integer.parseInt(year);
+			     count2++;
+			}else{
+			     System.out.println("Wrong input ! ");
+			     continue;
 			}
 		} while (count2 != data2.length);
 
